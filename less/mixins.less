@@ -1,1 +1,25 @@
 // Mixins Here
+
+.flex() {
+    display: flex;
+}
+
+.width() {
+    width: 100%;
+}
+
+//Parametric Mixin
+.btn-home(@width: 110px, @bgColor: #22283A, @fontColor: white) {
+    display: block;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: #22283A;
+    color: @fontColor;
+    width: @width;
+    background-color: @bgColor
+ 
+    
+}
